@@ -1,6 +1,4 @@
-import 'package:bluetooth_sharing/routes/app_pages.dart';
-import 'package:bluetooth_sharing/views/home/home_binding.dart';
-import 'package:bluetooth_sharing/views/home/home_view.dart';
+import 'package:bluetooth_sharing/views/file_sharing_home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -18,9 +16,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ), 
-    initialBinding: HomeBinding(),
-      home: const HomeView(),
-      getPages: AppPages.pages,
+    // initialBinding: HomeBinding(),
+      home: FileSharingHome(),
+      // getPages: AppPages.pages,
     );
   }
 }
